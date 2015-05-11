@@ -32,7 +32,7 @@ function fileNameFromURL(url) { // get the filename from a URL
 // Save a URL to OneDrive
 function saveLinkToOneDrive(info, tab) {
 	log(info,tab);
-	var url = onedrivebaseurl + encodeURIComponent(info.pageUrl) + appidkey + appidval + filekey + fileNameFromURL(info.pageUrl);
+	var url = onedrivebaseurl + encodeURIComponent(info.linkUrl) + appidkey + appidval + filekey + fileNameFromURL(info.linkUrl);
 	newTab(url);
 }
 
